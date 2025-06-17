@@ -1,0 +1,139 @@
+/* styles.css */
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header, footer {
+  background-color: #654572;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+.section-image {
+  flex: 1 1 300px;
+  max-width: 500px;
+  padding: 1rem;
+}
+
+.section-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.section-text {
+  flex: 2 1 400px;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+h2 {
+  color: #654572;
+}
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+
+  .section-image, .section-text {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+}
+.full-width-length {
+  display: block;
+  padding: 2rem;
+  text-align: center;
+  height: 800px;
+  margin-top: 50px;
+}
+.full-width {
+  display: block;
+  padding: 2rem;
+  text-align: center;
+}
+
+.full-width h1 {
+  color: #654572;
+  font-size: 36px;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+.full-width img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+.full-width-length h2 {
+  margin: 1rem 0 0.5rem;
+}
+
+.full-width-length p {
+  margin: 0;
+}
+.section-text ul {
+      list-style: none;
+      padding-left: 0;
+    }
+  /* Primary List: 😺 */
+    .cat-list > li::before {
+      content: "😺";
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+
+    .cat-list > li {
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    /* Secondary List: 🐱 */
+    .cat-list li ul > li::before {
+      content: "🐱";
+      margin-right: 8px;
+      font-size: 1.1rem;
+    }
+
+    .cat-list li ul > li {
+      padding-left: 1.5rem;
+    }
+
+    /* Tertiary List: 🐾 */
+    .cat-list li ul li ul > li::before {
+      content: "🐾";
+      margin-right: 6px;
+      font-size: 1rem;
+    }
+
+    .cat-list li ul li ul > li {
+      padding-left: 1.5rem;
+    }
